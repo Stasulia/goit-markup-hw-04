@@ -192,6 +192,10 @@ button {
     background-color: var(--main-dark-cl);
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: images/office.jpg 
+    
+    lightgray 0px -167.766px / 100% 139.922% no-repeat;
+        Assets
 }
 
 .hero-title {
@@ -236,8 +240,10 @@ button {
 .section-advantages.list {
     display: flex;
     width: 1128px;
+    height: 224px;
     justify-content: space-between;
     gap: 24px;
+    align-items: center;
 }
 .section-advantages-item {
     width: calc((100% - 3 * 24px) / 4);
@@ -247,6 +253,7 @@ button {
 }   
 .advantages-subtitle {
     margin-bottom: 8px;
+    margin-top: 8px;
 }
 .section-advantages-text {
     line-height: 1.5;
@@ -254,11 +261,16 @@ button {
     margin: 0;
 }
 .advantages-icon {
-    fill: #2E2F42;
-    border-radius: 4px;
-    background: var(--cloud, #F4F4FD);
-    padding: 24px 100 px;
+    fill: currentColor;
+    
     width: 100%;
+    margin-bottom: 8px;
+}
+.section-advantages .icons {
+    padding: 24px 100px;
+    background: var(--cloud, #F4F4FD);
+    border-radius: 4px;
+    border-radius: 4px;
 }
 /*What are we doing section*/
 .section {}
@@ -500,7 +512,8 @@ letter-spacing: 0.02em;
     align-items: center;
     color: #8E8F99;
     justify-content: center;
-    transition: border-color 250ms cubic-beizier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-beizier(0.4, 0, 0.2, 1), 
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -533,3 +546,12 @@ letter-spacing: 0.02em;
 }
 
 .section.customers {}
+
+
+.page-studio::after {
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--ocean, #404BBF);
+    content: "";
+}
