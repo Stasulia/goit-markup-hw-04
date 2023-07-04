@@ -198,7 +198,7 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
    }
 .hero-title {
@@ -227,7 +227,7 @@ button {
     border-radius: 4px;
     padding: 16px 32px;
     border: none;
-    transition: background-color 250ms cubic-beizier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -262,11 +262,16 @@ button {
     letter-spacing: 0.02em;
     margin: 0;
 }
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    margin-bottom: 8px;
+}
 .advantages-icon {
     fill: currentColor;
-    
     width: 100%;
-    margin-bottom: 8px;
 }
 .section-advantages .icons {
     padding: 24px 100px;
@@ -402,7 +407,7 @@ padding-bottom: 120px;
     background-color: var(--blue-accent-cl);
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms cubic-beizier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-links .link:hover {
     background-color:#31D0AA;
@@ -542,7 +547,7 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     align-items: center;
     color: #8E8F99;
     justify-content: center;
-    transition: border 250ms cubic-beizier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover,
 .customers-link:focus,
@@ -613,15 +618,21 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     top: 50%;
     left: 50%;
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     background-color: #fcfcfc;
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon {
     stroke: var(--main-dark-cl);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
+    fill: var(--accent-cl);
 }
 .modal-btn {
     position: absolute;
@@ -633,7 +644,12 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     width: 24px;
     height: 24px;
     padding: 0;
-    border-radius: 24px;
+    border-radius: 50%;
     background-color: var(--border-cl);
-    border: 1px solid rgba(0, 0, 0, 0.10);
+    border: 1px solid rgba(0, 0, 0, 0.10);|
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover {
+background-color: var(--BLUE-accent-cl);
+border: none;
 }
