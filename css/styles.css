@@ -115,11 +115,13 @@ button {
     letter-spacing: 0.02em;
     color: var(--main-dark-cl);
     border-bottom: 1px solid var(--border-cl);
+
 }
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 
 }
 .header-item { 
@@ -175,7 +177,7 @@ button {
     letter-spacing: 0.02em;
     line-height: 1.5;
     color: var(--main-dark-accent);
-    transition: color 250ms cubic-beizier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-link:hover,
 .address-link:focus {
@@ -357,7 +359,9 @@ padding-bottom: 120px;
 /*Footer section*/
 .footer .container {
     display: flex;
+    align-items: baseline;
 }
+
 .footer {
     background: var(--main-dark-cl);
     color: var(--main-light-cl);
@@ -380,8 +384,9 @@ padding-bottom: 120px;
 .footer-subtitle {
     font-size: 16px;
     font-weight: 500;
+    line-height: 1.5;
     line-height: 24px;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02px;
     color: var(--accent-cl);
     margin-bottom: 16px;
 }
@@ -399,7 +404,9 @@ padding-bottom: 120px;
     justify-content: center;
     transition: background-color 250ms cubic-beizier(0.4, 0, 0.2, 1);
 }
-.footer-links .link:hover,
+.footer-links .link:hover {
+    background-color:#31D0AA;
+}
 .footer-links .link:focus {
     background-color: #31D0AA;
 }
@@ -572,6 +579,7 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 
 .active {
     position: relative;
+    color: var(--BLUE-accent-cl);
 }
 .active::after {
     position: absolute;
@@ -582,7 +590,7 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
     background: var(--ocean, #404BBF);
     content: "";
     margin-top: 20px;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
 }
 /*Modal styles*/
