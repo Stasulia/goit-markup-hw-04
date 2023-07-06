@@ -402,7 +402,7 @@ padding: 32px 0;
     display: flex;
     gap: 16px;
 }
-.footer-links .link {
+.footer-link {
     display: flex;
     width: 40px;
     height: 40px;
@@ -412,8 +412,8 @@ padding: 32px 0;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-links .link:hover, 
-.footer-links .link:focus {
+.footer-link:hover, 
+.footer-link:focus {
     background-color: #31D0AA;
 }
 .footer-logo {
